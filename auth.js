@@ -1,10 +1,10 @@
 //MSAL configuration
 const msalConfig = {
     auth: {
-        clientId: '<client id of home grown app>',     
-        redirectUri: 'http://localhost:8080'
-        //admin consent link for mult apps
-        //https://login.microsoftonline.com/organizations/v2.0/adminconsent?client_id=<clientid of home grown app>&scope=https://graph.microsoft.com/.default
+        clientId: '<clientid>',     
+        redirectUri: 'http://localhost:8080',
+        authority: 'https://login.microsoftonline.com/<clientid>',
+              
     }
 };
 const msalRequest = { scopes: [] };
